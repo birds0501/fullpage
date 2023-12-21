@@ -24,6 +24,9 @@ body {
   height: 70px;
   background: #000;
   position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 #footer {
@@ -43,6 +46,9 @@ body {
 .sec4 {
   background: green;
 }
+.section {
+  padding: 100px;
+}
 
 .section h2 {
   font-size: 3rem;
@@ -58,4 +64,42 @@ body {
   transform: translateY(-50%);
   right: 5%;
   z-index: 99;
+}
+
+#myMenu li {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #000;
+  margin: 20px 0;
+  position: relative;
+}
+
+#myMenu li a {
+  display: block;
+  height: 100%; /* b가 떠서 a클릭이 어려움(크기가 0으로 인식됨) 따라서 크기 주기 */
+}
+#myMenu li a b {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -60px;
+  border: 1px solid #000;
+  background: #fff;
+  padding: 5px 10px;
+  border-radius: 30px;
+  width: 160px;
+  z-index: -1;
+  opacity: 0;
+  transition: 0.4s;
+}
+
+/* 활성화 표시 */
+#myMenu li.active {
+  background: #f39;
+}
+
+#myMenu li.active a b {
+  opacity: 1;
+  right: -10px;
 }
