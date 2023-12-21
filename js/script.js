@@ -17,4 +17,27 @@ $(function () {
     //영역 컨텐츠의 세로 정렬
     verticalCentered: false,
   });
+
+  //go-top 버튼 클릭했을 때
+  $(".btn-top").on("click", function (e) {
+    e.preventDefault();
+
+    //fullpage 메서드 : 원하는 영역 이동
+    $.fn.fullpage.moveTo(1);
+  });
+
+  $(".btn-silent").on("click", function () {
+    //원하는 곳으로 조용히(즉시) 이동
+    $.fn.fullpage.silentMoveTo(1);
+  });
+
+  $(".btn-up").on("click", function () {
+    //btn-up 버튼 클릭했을때 한 영역 위로 이동
+    $.fn.fullpage.moveSectionUp();
+  });
+
+  $(".btn-down").on("click", function () {
+    //btn-down 버튼 클릭했을때 한 영역 아래로 이동
+    $.fn.fullpage.moveSectionDown();
+  });
 });
