@@ -20,6 +20,31 @@ body {
   line-height: 1.6;
 }
 
+/* 스크롤바 디자인 변경 */
+/* ::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #f39;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000;
+} */
+
+/* 스크롤바 숨기기(기능은 하지만 숨기자) */
+html {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  overflow-y: scroll;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
 #header {
   height: 70px;
   background: #000;
@@ -145,4 +170,12 @@ nav a {
 
 .btns button {
   padding: 10px;
+}
+
+/* 많은 내용 */
+.box {
+  width: 70%;
+  border: 10px solid #000;
+  margin: 50px auto;
+  padding: 50px;
 }
