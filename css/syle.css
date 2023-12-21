@@ -1,0 +1,61 @@
+@charset 'utf-8';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+body {
+  line-height: 1.6;
+}
+
+#header {
+  height: 70px;
+  background: #000;
+  position: fixed;
+}
+
+#footer {
+  height: 100px;
+  background: #333;
+}
+
+.sec1 {
+  background: red;
+}
+.sec2 {
+  background: orange;
+}
+.sec3 {
+  background: yellow;
+}
+.sec4 {
+  background: green;
+}
+
+.section h2 {
+  font-size: 3rem;
+}
+.section p {
+  margin-top: 50px;
+}
+
+/* 인디케이터 디자인 */
+#myMenu {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 5%;
+  z-index: 99;
+}

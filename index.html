@@ -12,6 +12,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="./css/syle.css" />
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
       integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
@@ -25,27 +26,43 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <!-- css가 제일 먼저, 두 번째는 제이쿼리 마지막으로 스크립트 내 스크립트는 가장 마지막에-->
+    <!-- cdnjs에서 복사 min버전으로 붙여야 함-->
+    <!-- css가 제일 먼저(가져온게 1 내거가 2), 두 번째는 제이쿼리 마지막으로 스크립트 내 스크립트는 가장 마지막에-->
     <script src="./js/script.js"></script>
   </head>
   <body>
+    <!-- 인디케이터- 카페 2.97-깃헙에서복붙해온 것 바디 가장 위에 붙여주어야 함-->
+    <ul id="myMenu">
+      <li data-menuanchor="sec1" class="active">
+        <a href="#sec1">First section</a>
+      </li>
+      <li data-menuanchor="sec2">
+        <a href="#sec2">Second section</a>
+      </li>
+      <li data-menuanchor="sec3">
+        <a href="#sec3">Third section</a>
+      </li>
+      <li data-menuanchor="sec4">
+        <a href="#sec4">Fourth section</a>
+      </li>
+    </ul>
     <header id="header"></header>
 
     <!-- 부모의 이름은 'id=fullpage', 자식은 'class=section' -->
     <main id="fullpage">
-      <section class="section">
+      <section class="section sec1">
         <h2>SECTION1</h2>
         <p>첫번째 섹션입니다옹</p>
       </section>
-      <section class="section">
+      <section class="section sec2">
         <h2>SECTION2</h2>
         <p>두번째 섹션입니다옹</p>
       </section>
-      <section class="section">
+      <section class="section sec3">
         <h2>SECTION3</h2>
         <p>세번째 섹션입니다옹</p>
       </section>
-      <section class="section">
+      <section class="section sec4">
         <h2>SECTION4</h2>
         <p>네번째 섹션입니다옹</p>
       </section>
