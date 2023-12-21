@@ -27,6 +27,11 @@ body {
   top: 0;
   left: 0;
   width: 100%;
+  transition: 0.4s;
+}
+
+#header.hide {
+  top: -70px;
 }
 
 #footer {
